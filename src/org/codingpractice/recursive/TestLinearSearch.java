@@ -5,7 +5,7 @@ public class TestLinearSearch {
 	
 	static int getElements(int [] arr, int key, int i, int n) {
 		
-		      if(i > n) {  //base case
+		      if(i > n -1) {  //base case
 		    	  return -1;
 		      }
 		      
@@ -23,7 +23,7 @@ public class TestLinearSearch {
 	
 	 public static void main(String args[]) {
 		 int[] arr = {1,2,3,10,4,6,8,9};
-		 int key = 66;
+		 int key = 88;
 		 int i = 0;
 		 int n = 8;
 		  
