@@ -12,6 +12,9 @@ public class HeapByArray {
 		this.sizeOfTree = 0;
 		System.out.println("Empty Heap has been created !");
 	}//end of method
+	
+	
+	
 
 	
 	public int sizeOfArray() {
@@ -20,6 +23,7 @@ public class HeapByArray {
 	
 	
 	public int sizeOfTree() {
+		
 		System.out.println("Size Of Tree: " + sizeOfTree);
 		return sizeOfTree;
 	}//end of method
