@@ -7,10 +7,16 @@ public class QueueByLinkedList {
 	//constructor
 	public QueueByLinkedList() {
 		list = new SingleLinkedListOperation();
+		
+		int[] arr = new int[1000];
+		int m = arr.length;
 	}
 	
 	//add  items in queue
 	 public void enQueue(int value) {
+		 
+		 String str = "amir";
+		
 		 
 		 if(list.getHead() == null) {//empty list
 		  list.createSingleLinkedList(value);
