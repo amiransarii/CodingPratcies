@@ -1,30 +1,21 @@
 package org.codingpractice.divideconquer;
 
-/**
- * 
- * @author amir.ansari
- * implement house thief problems
- */
-public class TestHouseThieftProblems {
+public class TestHouseThief {
 	
-	public static void main(String args[]) {
+	public static void main(String[] args) {
+		TestHouseThief ht = new TestHouseThief();
 		int[] HouseNetWorth = {6, 7, 1, 30, 8, 2, 4};
-		System.out.println(maxMoney(HouseNetWorth));
+		System.out.println(ht.maxMoney(HouseNetWorth));
 		HouseNetWorth = new int[] {20, 5, 1, 13, 6, 11, 40};
-		System.out.println(maxMoney(HouseNetWorth));
-		
-		
+		System.out.println(ht.maxMoney(HouseNetWorth));
 	}
 	
 	
-	public static int maxMoney(int[] HouseNetWorth) {
+	public int maxMoney(int[] HouseNetWorth) {
 		return maxMoneyRecursive(HouseNetWorth, 0);
 	}//end of method
-	
-	
-	
-	
-	private static int maxMoneyRecursive(int[] HouseNetWorth, int currentIndex) {
+
+	private int maxMoneyRecursive(int[] HouseNetWorth, int currentIndex) {
 		if (currentIndex >= HouseNetWorth.length) 
 			return 0;
 

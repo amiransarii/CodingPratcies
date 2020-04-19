@@ -1,25 +1,18 @@
 package org.codingpractice.entity;
 
 public class FractionalKnapsackItem {
-	
 	private int index;
 	private int value;
 	private int weight;
 	private double ratio;
 	
 	
-	//default constructor
-	public FractionalKnapsackItem() {
-		
-	}
-	
 	//constructor
 	public FractionalKnapsackItem(int index, int value, int weight) {
-		super();
 		this.index = index;
 		this.value = value;
 		this.weight = weight;
-		this.ratio = value*1.0/weight;
+		ratio =  value*1.0 / weight;
 	}
 	
 	public int getIndex() {
@@ -60,9 +53,10 @@ public class FractionalKnapsackItem {
 	public void setRatio(double ratio) {
 		this.ratio = ratio;
 	}//end of method
-	
+
 	@Override
 	public String toString() {
 		return "Item index=" + index + ", value=" + value + ", weight=" + weight + ", ratio=" + ratio + "]";
 	}//end of method
+
 }

@@ -3,6 +3,7 @@ package org.codingpractice.entity;
 public class GreedyActivity {
 	
 	private String name; // name of the activity
+	
 	private long startTime ;// start time of the activity
 	private long finishTime; //finish time of the activity
 	
@@ -45,7 +46,12 @@ public class GreedyActivity {
 		this.finishTime = finishTime;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "GreedyActivity [name=" + name + ", startTime=" + startTime + ", finishTime=" + finishTime + "]";
+	}
+
+
 	
 
 }
