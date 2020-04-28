@@ -14,17 +14,20 @@ public class TestLongestPalindromicSubsequence {
 	
 	private int LPSAux(String str, int startIndex, int endIndex) {
 	
-		if(startIndex > endIndex) {//BASE CASE - If we have traversed more than 1/2 of string then return 0 as we dont need to process it
+		if(startIndex > endIndex) {//BASE CASE - If we have traversed more than 1/2 of string 
+			//then return 0 as we dont need to process it
 			return 0;
 		}
 		
-		if(startIndex == endIndex) { //BASE CASE - If both the index are at same position then its a palindrome as its 1 character.
+		if(startIndex == endIndex) { //BASE CASE - If both the index are at same position
+			//then its a palindrome as its 1 character.
 			return 1;
 		}
 		
 		int count1 = 0;
 		
-		if(str.charAt(startIndex) == str.charAt(endIndex)) {//CASE#1 - If index pointed characters matches then we add 2 to the existing known palindrome length
+		if(str.charAt(startIndex) == str.charAt(endIndex)) {//CASE#1 - If index pointed characters 
+			//matches then we add 2 to the existing known palindrome length
 			count1 = 2 + LPSAux(str, startIndex + 1, endIndex - 1);
 		}
 		

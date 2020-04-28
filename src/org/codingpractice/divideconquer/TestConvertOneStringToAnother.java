@@ -38,7 +38,8 @@ public class TestConvertOneStringToAnother {
 		 if(i2 == s2.length())  // if we have reached the end of s2, then delete all the remaining characters of s1
 			 return s1.length() -i1;
 		 
-		 if(s1.charAt(i1) == s2.charAt(i2)) { // If the strings have a matching character, recursively match for the remaining lengths.
+		 if(s1.charAt(i1) == s2.charAt(i2)) { // If the strings have a matching character, 
+			 //recursively match for the remaining lengths.
 			 return findMinOperationsAux(s1, s2, i1 +1, i2 +1);
 		 }
 

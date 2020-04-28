@@ -19,7 +19,8 @@ public class TestLongestCommonSubsequence {
 			
 			int c3 = 0;
 			
-			if(s1.charAt(i1) == s2.charAt(i2)) {//If current character in both the string matches, then increase the index by 1 in both the strings.
+			if(s1.charAt(i1) == s2.charAt(i2)) {//If current character in both the string matches, 
+				//then increase the index by 1 in both the strings.
 				c3 = 2 + findLCSLengthAux(s1, s2, i1 +1, i2 +1);
 			}
 			

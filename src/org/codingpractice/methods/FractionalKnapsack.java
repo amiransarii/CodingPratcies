@@ -13,21 +13,9 @@ public class FractionalKnapsack {
 	 static double totalValue = 0;
 	
 	 public static void knapSack(List<FractionalKnapsackItem> items, int capacity) {
-		 System.out.println("Item Available");
-		 items.forEach(item ->{
-			  System.out.println("Index "+ item.getIndex() +" Weight "+item.getWeight() +" Value "+item.getValue() +" Ratio "+item.getRatio());
-
-		 });
 	
-		 //sort the items based on ratio
-		 System.out.println();
-		 System.out.println("Sort the item based on ratio");
 		 //sort the items
 		  items.sort((item1, item2) -> Double.compare(item2.getRatio(), item1.getRatio()));
-		  items.forEach(item ->{
-			  System.out.println("Index "+ item.getIndex() +" Weight "+item.getWeight() +" Value "+item.getValue() +" Ratio "+item.getRatio());
-
-		 });
 		  
 		  System.out.println();
 		  System.out.println("Selected Items");
